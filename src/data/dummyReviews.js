@@ -1,0 +1,58 @@
+const dummyReviews = [
+  {
+    id: 1,
+    sessionId: 3,
+    reviewerId: 5,
+    revieweeId: 1,
+    rating: 5,
+    comment: "Arun picked up the chords quickly and practiced well between sessions.",
+    createdAt: "2026-10-16",
+  },
+  {
+    id: 2,
+    sessionId: 101,
+    reviewerId: 1,
+    revieweeId: 2,
+    rating: 5,
+    comment: "Priya explained Python concepts very clearly.",
+    createdAt: "2026-09-12",
+  },
+  {
+    id: 3,
+    sessionId: 102,
+    reviewerId: 3,
+    revieweeId: 2,
+    rating: 4,
+    comment: "Very helpful session on SQL basics.",
+    createdAt: "2026-09-25",
+  },
+  {
+    id: 4,
+    sessionId: 103,
+    reviewerId: 2,
+    revieweeId: 3,
+    rating: 4,
+    comment: "Great tips on camera settings.",
+    createdAt: "2026-09-30",
+  },
+  {
+    id: 5,
+    sessionId: 104,
+    reviewerId: 1,
+    revieweeId: 4,
+    rating: 4,
+    comment: "Divya made Spring Boot easy to understand.",
+    createdAt: "2026-10-02",
+  },
+  {
+    id: 6,
+    sessionId: 105,
+    reviewerId: 5,
+    revieweeId: 4,
+    rating: 3,
+    comment: "Good session, but we ran out of time.",
+    createdAt: "2026-10-08",
+  },
+];
+
+export default dummyReviews;

@@ -1,0 +1,150 @@
+.navbar {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px max(28px, calc((100vw - 1200px) / 2));
+  border-bottom: 1px solid rgba(232, 229, 242, 0.8);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 18px rgba(39, 32, 75, 0.035);
+  backdrop-filter: blur(16px);
+}
+
+.navbar-logo {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+  color: #292343;
+  font-size: 21px;
+  font-weight: 760;
+  letter-spacing: -0.055em;
+}
+
+.navbar-logo-mark {
+  display: block;
+  width: 35px;
+  height: 35px;
+  flex: 0 0 auto;
+  color: #6959e2;
+  filter: drop-shadow(0 4px 7px rgba(105, 89, 226, 0.22));
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar-links a,
+.navbar-links button {
+  display: inline-flex;
+  min-height: 39px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 13px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: #656176;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.navbar-links a:hover,
+.navbar-links button:hover {
+  background: #f5f3ff;
+  color: #5143c7;
+}
+
+.navbar-links a.active {
+  background: #f0edff;
+  color: #5143c7;
+}
+
+.navbar-links a[href="/register"] {
+  margin-left: 4px;
+  background: #6557df;
+  box-shadow: 0 5px 13px rgba(101, 87, 223, 0.17);
+  color: #fff;
+}
+
+.navbar-links a[href="/register"]:hover,
+.navbar-links a[href="/register"].active {
+  background: #5143c7;
+  color: #fff;
+}
+
+.navbar-links button {
+  cursor: pointer;
+}
+
+.navbar a:focus-visible,
+.navbar button:focus-visible {
+  outline: 3px solid rgba(101, 87, 223, 0.35);
+  outline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    min-height: 68px;
+    gap: 12px;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .navbar-logo {
+    gap: 8px;
+    font-size: 19px;
+  }
+
+  .navbar-logo-mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .navbar-links {
+    max-width: calc(100vw - 150px);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .navbar-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar-links a,
+  .navbar-links button {
+    min-height: 36px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 16px 10px;
+  }
+
+  .navbar-links {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 -4px;
+  }
+
+  .navbar-links a,
+  .navbar-links button {
+    min-height: 34px;
+    padding: 0 9px;
+  }
+}

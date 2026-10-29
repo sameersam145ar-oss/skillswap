@@ -1,0 +1,86 @@
+.status-scheduled {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.status-completed {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.session-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.session-detail-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.session-detail-value {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.session-hint {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.review-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 14px;
+}
+
+.btn-review {
+  align-self: flex-start;
+  background-color: #fef3c7;
+  color: #92400e;
+  border-color: #f59e0b;
+}
+
+.btn-review:hover {
+  background-color: #fde68a;
+}
+
+.review-block {
+  background-color: #fffbeb;
+  border-left: 3px solid #f59e0b;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+.review-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.review-block-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #92400e;
+}
+
+.review-block-comment {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.review-block-date {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #9ca3af;
+}
